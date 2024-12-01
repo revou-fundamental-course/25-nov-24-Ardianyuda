@@ -1,0 +1,134 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #aa5486;
+  background-color: #fbf4db;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: #fde7bb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #aa5486;
+}
+
+.navbar .nav-logo span {
+  color: #fc8f54;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.1rem;
+  display: inline-block;
+  margin: 0 0.7rem;
+  color: #aa5486;
+}
+
+.navbar .navbar-nav a:hover {
+  text-decoration: underline;
+  color: #fc8f54;
+}
+
+.navbar .navbar-nav .btn-start {
+  background-color: #aa5486;
+  color: white;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.navbar .navbar-nav .btn-start:hover {
+  text-decoration: none;
+  background-color: #fc8f54;
+  color: white;
+}
+
+/* section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #aa5486;
+  color: #fbf4db;
+}
+
+.hero .content1 {
+  padding: 1.5rem 7%;
+}
+
+.hero .content1 .con1-judul {
+  font-size: 4.5rem;
+  line-height: 5rem;
+}
+
+.hero .content1 .con1-judul span {
+  color: #fc8f54;
+}
+
+.hero .content1 .des-home {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.hero .content1 a {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #fbf4db;
+  color: #aa5486;
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-weight: 700;
+}
+
+.hero .content1 a:hover {
+  color: #fbf4db;
+  background-color: #fc8f54;
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62%;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
