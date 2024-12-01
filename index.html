@@ -23,29 +23,100 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#fitur">Fitur</a>
-        <a href="bmi">BMI</a>
-        <a href="bmi" class="btn-start">Start</a>
+        <a href="#bmi">BMI</a>
+        <a href="#bmi" class="btn-start">Start</a>
       </div>
     </nav>
     <!-- navbar end -->
 
-    <!-- section pertama -->
+    <!-- Home -->
     <section class="hero" id="home">
       <main class="content1">
         <h1 class="con1-judul"><span>WELCOME</span> <br />TO BMI CALCULATOR</h1>
         <p class="des-home">
-          Berat badan ideal adalah impian semua orang, tidak hanya memiliki<br/>
-          betuk tubuh yang menunjang penampilan, berat badan juga
-          menandakan kondisi tubuh yang sehat. <br />
+          Berat badan ideal adalah impian semua orang, tidak hanya memiliki<br />
+          betuk tubuh yang menunjang penampilan, berat badan juga menandakan
+          kondisi tubuh yang sehat. <br />
           Bagaimana denganmu.?
         </p>
-        <a href="bmi" class="cta-yuk">Hitung Sekarang</a>
+        <a href="#bmi" class="cta-yuk">Hitung Sekarang</a>
       </main>
     </section>
-    <!-- section pertama end -->
+    <!-- Home end -->
 
-    <!-- section kedua -->
-    <!-- section kedua end -->
+    <!-- Fitur BMI -->
+     <section class="hero2" id="fitur">
+      <article class="content2">
+        <h1 class="con2-judul">Fitur BMI</h1>
+        <ol>
+          <li>Menghitung berat badan</li>
+          <li>Menentukan kategori berat badan ideal atau tidak</li>
+          <li>Mempersiapkan program penurunan berat badan</li>
+        </0l>
+        <br>
+        <p class="con2-des">
+          Kalkulator ini hanya digunakan untuk orang dewasa
+          <span
+            >wanita hamil atau menyusui tidak boleh mengandalkan <br>pembacaan BMI
+            ini.</span
+          > dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain
+          berkonsultasi <br>dengan dokter atau sejenisnya.
+        </p>
+        <br />
+        <p class="con2-des">
+          Kalkulator akan memberikan anda gambaran tentang perbandingan berat
+          badan anda dalam nilai umum. <br>Index masa tubuh atau <span>BMI</span> di
+          hitung sebagai berat badan anda dalam kg dibagi dengan kuadrat tinggi
+          badan <br>anda dalam meter.
+        </p>
+      </article>
+     </section>
+    <!-- Fitur BMI end -->
+
+    <!-- BMI calculator -->
+     <section class="hero3" id="bmi">
+      <form class="con3-form">
+        <div class="box">
+          <h1 class="con3-judul">BMI Calculator</h1>
+          <div class="con3-gen">
+            <input type="radio" id="rad-laki" name="gen-laki" value="Laki">
+            <label for="gender">Laki-laki</label>
+            <input type="radio" id="rad-wanita" name="gen-wanita" value="Wanita">
+            <label for="gender">Perempuan</label>
+          </div>
+  
+          <div class="con3-age">
+            <label for="age">Age(Years)</label><br>
+            <input type="text" id="age">
+          </div>
+  
+          <div class="con3-height">
+            <label for="height">Height(cm)</label><br>
+            <input type="text" id="height">
+          </div>
+  
+          <div class="con3-weight">
+            <label for="weight">Weight(kg)</label><br>
+            <input type="text" id="weight">
+          </div>
+  
+          <div class="con3-but">
+            <button id="cta-bmi">Hitung BMI</button>
+            <button id="cta-res">Reset</button>
+          </div>
+  
+          <!-- Result -->
+          <div class="result">
+          <p>Your BMI is</p>
+          <div class="result">00.00</div>
+          <p class="comment">Comment : you are overweight</p>
+          </div>
+        </div>
+        
+      </form>
+      
+     </section>
+    <!-- BMI calculator end -->
 
     <!-- my script -->
     <script src="js/main.js"></script>

@@ -13,6 +13,8 @@ body {
   background-color: #fbf4db;
 }
 
+/* Style Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,7 +65,7 @@ body {
   color: white;
 }
 
-/* section */
+/* Style Home */
 
 .hero {
   min-height: 100vh;
@@ -90,14 +92,13 @@ body {
 
 .hero .content1 .des-home {
   font-size: 1.2rem;
-  font-weight: normal;
   margin-top: 5px;
 }
 
 .hero .content1 a {
   display: inline-block;
   font-size: 1.5rem;
-  background-color: #fbf4db;
+  background-color: #fde7bb;
   color: #aa5486;
   margin-top: 1rem;
   border-radius: 5px;
@@ -108,6 +109,68 @@ body {
 .hero .content1 a:hover {
   color: #fbf4db;
   background-color: #fc8f54;
+}
+
+/* Style Fitur BMI */
+
+.hero2 {
+  min-height: 100vh;
+  padding: 1.4rem 7%;
+  align-items: center;
+  align-content: center;
+}
+
+.hero2 .content2 .con2-judul {
+  font-size: 3rem;
+}
+
+.hero2 .content2 ol {
+  margin-top: 1rem;
+}
+
+.hero2 .content2 ol li {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+}
+
+.hero2 .content2 .con2-des {
+  font-size: 1.4rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.hero2 .content2 .con2-des span {
+  color: #fc8f54;
+}
+
+/* Style BMI Calculator */
+
+.hero3 {
+  min-height: 100vh;
+  background-color: #fc8f54;
+  align-content: center;
+  text-align: center;
+}
+
+.hero3 .con3-form {
+}
+
+.hero3 .con3-form .box {
+  min-width: 200px;
+  background-color: #fbf4db;
+  margin: 0 25% 0 25%;
+  border-radius: 10px;
+}
+
+.hero3 .con3-form .box .con3-judul {
+  font-size: 3rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.hero3 .con3-form .box .con3-gen {
+  background-color: #fde7bb;
+  text-align: center;
 }
 
 /* media queries */
