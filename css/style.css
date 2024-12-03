@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: #fde7bb;
+  background-color:#ffe1f3;
   position: fixed;
   top: 0;
   left: 0;
@@ -146,31 +146,172 @@ body {
 
 /* Style BMI Calculator */
 
-.hero3 {
-  min-height: 100vh;
-  background-color: #fc8f54;
+.container {
+  min-height: 170vh;
+  background-color: #fde7bb;
+  text-align: center;
   align-content: center;
+}
+
+.container .box {
+  width: auto;
+  margin: 0 15% 0 15%;
+  border-radius: 20px;
   text-align: center;
 }
 
-.hero3 .con3-form {
+.container .box .jd-bmi {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:#aa5486;
+  margin-bottom: 1rem;
 }
 
-.hero3 .con3-form .box {
-  min-width: 200px;
-  background-color: #fbf4db;
-  margin: 0 25% 0 25%;
+.content3 {
+  width: auto;
+  background-color:#fbf4db;
+  margin: 0 30% 0 30%;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.content3 .input-rad {
+  width: auto;
+  background-color: #f0ecda;
+  margin: 0 15% 0 15%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content3 .input-rad .jd-rad {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+}
+
+.content3 .input-rad .rad {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content3 .input {
+  width: auto;
+  background-color: #f0ecda;
+  margin: 0 15% 0 15%;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content3 .input label {
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.content3 .input input[type="text"] {
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.content3 .input input[type="number"] {
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.content3 .button #calculate {
+  font-size: 1.7rem;
+  background-color: #aa5486;
+  color: white;
+  padding: 5px 10px;
   border-radius: 10px;
 }
 
-.hero3 .con3-form .box .con3-judul {
-  font-size: 3rem;
-  padding: 1rem 0 1rem 0;
+.content3 .button {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.hero3 .con3-form .box .con3-gen {
-  background-color: #fde7bb;
+.jd-result{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.result{
+  background-color:#fbf4db;
+  width: auto;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  padding: 1rem;
+  
+}
+
+.result .gen-result1{
+  font-size: 1.5rem;
+}
+
+.result .gen-result2{
+  font-size: 1.5rem;
+}
+
+.result .tagline{
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.result .bmi{
+  font-size: 3.5rem;
+  padding: 5px;
+}
+
+.result .comment{
+  font-size: 1.2rem;
+}
+
+.result .comment span{
+  color: #fc8f54;
+}
+
+.result .penjelasan{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.result .des{
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.result .donwload{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #aa5486;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-top: 1.5rem;
+}
+
+.footer{
+  max-height: auto;
+  background-color:#fc8f54;
   text-align: center;
+}
+
+footer .fot-text{
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem;
 }
 
 /* media queries */
@@ -180,6 +321,9 @@ body {
   html {
     font-size: 75%;
   }
+  .content3 .input input[type="text"]{
+    width: 65%;
+  }
 }
 
 /* tablet */
@@ -187,11 +331,17 @@ body {
   html {
     font-size: 62%;
   }
+  .content3 .input input[type="text"]{
+    width: 45%px;
+  }
 }
 
 /* mobile */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  .content3 .input input[type="text"]{
+    width: 35%px;
   }
 }

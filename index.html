@@ -74,49 +74,52 @@
     <!-- Fitur BMI end -->
 
     <!-- BMI calculator -->
-     <section class="hero3" id="bmi">
-      <form class="con3-form">
-        <div class="box">
-          <h1 class="con3-judul">BMI Calculator</h1>
-          <div class="con3-gen">
-            <input type="radio" id="rad-laki" name="gen-laki" value="Laki">
-            <label for="gender">Laki-laki</label>
-            <input type="radio" id="rad-wanita" name="gen-wanita" value="Wanita">
-            <label for="gender">Perempuan</label>
+     <div class="container" id="bmi">
+      <div class="box">
+        <p class="jd-bmi">BMI Calculator</p>
+        <div class="content3">
+          <!-- <div class="input-rad"> -->
+            <div class="input">
+              <label>Gender</label><br>
+              <input type="text" id="gender">
+            </div>
+          <!-- </div> -->
+          <div class="input">
+            <label>Usia</label><br>
+            <input type="number" id="usia">
           </div>
-  
-          <div class="con3-age">
-            <label for="age">Age(Years)</label><br>
-            <input type="text" id="age">
+          <div class="input">
+            <label>Height</label><br>
+            <input type="number" id="height">
           </div>
-  
-          <div class="con3-height">
-            <label for="height">Height(cm)</label><br>
-            <input type="text" id="height">
+          <div class="input">
+            <label>weight</label><br>
+            <input type="number" id="weight">
           </div>
-  
-          <div class="con3-weight">
-            <label for="weight">Weight(kg)</label><br>
-            <input type="text" id="weight">
-          </div>
-  
-          <div class="con3-but">
-            <button id="cta-bmi">Hitung BMI</button>
-            <button id="cta-res">Reset</button>
-          </div>
-  
-          <!-- Result -->
-          <div class="result">
-          <p>Your BMI is</p>
-          <div class="result">00.00</div>
-          <p class="comment">Comment : you are overweight</p>
-          </div>
+          <div class="button">
+            <button id="calculate">Submit</button>
         </div>
-        
-      </form>
-      
-     </section>
+        </div>
+        <!-- result -->
+        <p class="jd-result">Hasil BMI</p>
+        <div class="result">
+          <p class="gen-result1"><span></span></p>
+          <p class="gen-result2"><span></span>th</p>
+          <p class="tagline">BMI kamu adalah :</p>
+          <div class="bmi" id="result">00.00</div>
+          <p class="comment">Anda <span></span></p>
+
+          <p class="penjelasan">Info Detail</p>
+          <p class="des"><span></span></p>
+          <button class="donwload" id="print">Donwload Hasil BMI</button>
+        </div>
+      </div>
+     </div>
     <!-- BMI calculator end -->
+
+    <footer class="footer">
+      <p class="fot-text">Copyright 2024 | Ardianyuda</p>
+    </footer>
 
     <!-- my script -->
     <script src="js/main.js"></script>
